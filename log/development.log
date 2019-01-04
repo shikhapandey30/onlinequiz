@@ -18710,3 +18710,56 @@ Processing by RailsAdmin::MainController#dashboard as HTML
 Completed 200 OK in 96ms (Views: 86.5ms | ActiveRecord: 1.5ms)
 
 
+  [1m[35m (121.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (113.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6257190905007733110)[0m
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20170916204114)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (191.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "admin" boolean DEFAULT 'f', "cqscore" integer DEFAULT 0, "score" integer DEFAULT 0, "presentquizid" integer DEFAULT 0, "presentquizqueid" integer DEFAULT 0, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (58.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (44.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170916204114"]]
+  [1m[35m (20.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGenres (20170917165310)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (209.5ms)[0m  [1m[35mCREATE TABLE "genres" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170917165310"]]
+  [1m[35m (62.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSubgenres (20170917165345)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (194.6ms)[0m  [1m[35mCREATE TABLE "subgenres" ("id" bigserial primary key, "name" character varying, "genre_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_b701055c21"
+FOREIGN KEY ("genre_id")
+  REFERENCES "genres" ("id")
+)[0m
+  [1m[35m (32.1ms)[0m  [1m[35mCREATE  INDEX  "index_subgenres_on_genre_id" ON "subgenres"  ("genre_id")[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170917165345"]]
+  [1m[35m (58.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateQuestions (20170917165537)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (193.4ms)[0m  [1m[35mCREATE TABLE "questions" ("id" bigserial primary key, "subgenre_id" bigint, "question" character varying, "option1" character varying, "option2" character varying, "option3" character varying, "option4" character varying, "check1" boolean, "check2" boolean, "check3" boolean, "check4" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_352188e32c"
+FOREIGN KEY ("subgenre_id")
+  REFERENCES "subgenres" ("id")
+)[0m
+  [1m[35m (67.0ms)[0m  [1m[35mCREATE  INDEX  "index_questions_on_subgenre_id" ON "questions"  ("subgenre_id")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170917165537"]]
+  [1m[35m (68.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserQuizzes (20170918101104)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (70.4ms)[0m  [1m[35mCREATE TABLE "user_quizzes" ("id" bigserial primary key, "user_id" bigint, "subgenre_id" bigint, "score" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c36290a664"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_dfbc1492c7"
+FOREIGN KEY ("subgenre_id")
+  REFERENCES "subgenres" ("id")
+)[0m
+  [1m[35m (76.6ms)[0m  [1m[35mCREATE  INDEX  "index_user_quizzes_on_user_id" ON "user_quizzes"  ("user_id")[0m
+  [1m[35m (137.7ms)[0m  [1m[35mCREATE  INDEX  "index_user_quizzes_on_subgenre_id" ON "user_quizzes"  ("subgenre_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170918101104"]]
+  [1m[35m (60.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-04 07:46:34.139286"], ["updated_at", "2019-01-04 07:46:34.139286"]]
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6257190905007733110)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
