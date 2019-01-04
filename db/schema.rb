@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170918101104) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -19,7 +22,7 @@ ActiveRecord::Schema.define(version: 20170918101104) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.integer "subgenre_id"
+    t.bigint "subgenre_id"
     t.string "question"
     t.string "option1"
     t.string "option2"
@@ -36,15 +39,15 @@ ActiveRecord::Schema.define(version: 20170918101104) do
 
   create_table "subgenres", force: :cascade do |t|
     t.string "name"
-    t.integer "genre_id"
+    t.bigint "genre_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["genre_id"], name: "index_subgenres_on_genre_id"
   end
 
   create_table "user_quizzes", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "subgenre_id"
+    t.bigint "user_id"
+    t.bigint "subgenre_id"
     t.integer "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -74,4 +77,8 @@ ActiveRecord::Schema.define(version: 20170918101104) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "questions", "subgenres"
+  add_foreign_key "subgenres", "genres"
+  add_foreign_key "user_quizzes", "subgenres"
+  add_foreign_key "user_quizzes", "users"
 end
