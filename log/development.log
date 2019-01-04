@@ -18763,3 +18763,1800 @@ FOREIGN KEY ("subgenre_id")
   [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6257190905007733110)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:36:07 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:36:12 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 18028ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `string' for #<IO:<STDERR>>):
+     6:     <title>iQuiz</title>
+     7:     <%= csrf_meta_tags %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'jquery-1.10.2.min'%>
+    12:     <%= javascript_include_tag 'bootstrap.min'%>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3243784570352553489_45033100'
+Completed 200 OK in 21814ms (Views: 21812.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:37:41 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 412ms (Views: 401.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:38:22 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 309ms (Views: 301.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:38:42 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 149ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:38:50 +0530
+Processing by QuizplayController#index as HTML
+Completed 401 Unauthorized in 122ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:38:51 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (245.4ms)
+Completed 200 OK in 645ms (Views: 500.0ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:39:10 +0530
+Processing by QuizplayController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:39:10 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 94ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:39:26 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 131ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:39:44 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 121ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:40:01 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jHa71t6cLrY2I++ZSKJCNwjzGidrx+XDcMKSUyEvPgYC+JYP2GlXmqqWq95UkYcn/2WT3bdxeuuWG3qlukdGSA==", "user"=>{"email"=>"shikha@bittern.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (72.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "shikha@bittern.co"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 101ms (ActiveRecord: 72.9ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jHa71t6cLrY2I++ZSKJCNwjzGidrx+XDcMKSUyEvPgYC+JYP2GlXmqqWq95UkYcn/2WT3bdxeuuWG3qlukdGSA==", "user"=>{"email"=>"shikha@bittern.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 1606ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:40:16 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8t9aRYLsWfuIP4lP5qZ+DAnP6vVRPRRQJ7GHlhYqT2V8UXechBkg1xSKzQj6lbsc/lljD42Li3jBaG9gjUI3Kw==", "user"=>{"email"=>"shikha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "shikha@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8t9aRYLsWfuIP4lP5qZ+DAnP6vVRPRRQJ7GHlhYqT2V8UXechBkg1xSKzQj6lbsc/lljD42Li3jBaG9gjUI3Kw==", "user"=>{"email"=>"shikha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 259ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-01-04 13:40:18 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"EySuYjNAIOyxhPNJdpsiJBBL4eqyJ4OYMB5vaW104oidqoO7NbVZwC0xtw5qqOc0591oEG6RHLDWx4ef9hyaxg=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-01-04 13:40:34 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z9bP2XcGuQJoHMBRmglSKWfhJMCqUh+BkjUPTask+7/pWOIAcfPALvSphBaGOpc5kHetOnbkgKl07Oe7MEyD8Q==", "user"=>{"email"=>"shikha@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (3.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shikha@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "shikha@gmail.com"], ["encrypted_password", "$2a$11$0q92zxU.NrPFTZnA3HWUvOLR08Q/Z797zh/Ax4ApDPs7vjw1DvZ36"], ["created_at", "2019-01-04 08:10:34.728386"], ["updated_at", "2019-01-04 08:10:34.728386"]]
+  [1m[35m (22.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-01-04 08:10:34.762332"], ["last_sign_in_at", "2019-01-04 08:10:34.762332"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2019-01-04 08:10:34.763562"], ["id", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 727ms (ActiveRecord: 32.4ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:40:34 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (16.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered quizplay/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 251ms (Views: 121.3ms | ActiveRecord: 24.8ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "t"], ["updated_at", "2019-01-04 08:11:23.592665"], ["id", 1]]
+  [1m[35m (22.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:41:52 +0530
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered quizplay/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 901ms (Views: 834.5ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-04 13:41:57 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"authenticity_token"=>"H3Qqs7KyPRPGmAi0EyiJNNY4dE+mOsZs4pTLZYFHDESR+gdqtEdEP1otTPMPG0wkIa79tXqMWUQETSOTGi90Cg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  [1m[36mGenre Load (2.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (28.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "subgenres"[0m
+  [1m[36mSubgenre Load (3.9ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" ORDER BY "subgenres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (20.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_quizzes"[0m
+  [1m[36mUserQuiz Load (2.0ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" ORDER BY "user_quizzes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (151.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (25.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (10.2ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (7.4ms)
+Completed 200 OK in 4422ms (Views: 1295.5ms | ActiveRecord: 105.9ms)
+
+
+Started GET "/admin/question?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:42:23 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"question"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY questions.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (151.7ms)
+Completed 200 OK in 300ms (Views: 213.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/admin/genre?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:42:27 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"genre"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mGenre Load (2.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY genres.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (52.5ms)
+Completed 200 OK in 126ms (Views: 70.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/admin/genre/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:42:31 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"genre"}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (3.0ms)
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "subgenres"[0m
+  [1m[36mSubgenre Load (4.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (77.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (17.6ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (129.1ms)
+Completed 200 OK in 225ms (Views: 183.0ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/admin/subgenre?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:42:34 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"subgenre"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (43.7ms)
+Completed 200 OK in 79ms (Views: 55.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/subgenre/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:42:36 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"subgenre"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres" ORDER BY genres.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (68.9ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY questions.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (12.7ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_quizzes"[0m
+  [1m[36mUserQuiz Load (0.4ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" ORDER BY user_quizzes.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (15.2ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (19.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (12.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (151.9ms)
+Completed 200 OK in 182ms (Views: 161.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/admin/genre/new?modal=true" for 127.0.0.1 at 2019-01-04 13:42:42 +0530
+Processing by RailsAdmin::MainController#new as JS
+  Parameters: {"modal"=>"true", "model_name"=>"genre"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (3.7ms)
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (22.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (16.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml (55.5ms)
+Completed 200 OK in 73ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/admin/genre/new" for 127.0.0.1 at 2019-01-04 13:42:56 +0530
+Processing by RailsAdmin::MainController#new as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"21RitRQ4Bs0u8s4YnJtnU/sfYauM/QuIq2iAASSJdm/MorBJV1TW0z38PRc+X2maBh6jHHqqseZOf8++PlOvBQ==", "genre"=>{"name"=>"computer knowledge", "subgenre_ids"=>["", ""]}, "model_name"=>"genre"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE 1=0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "computer knowledge"], ["created_at", "2019-01-04 08:12:57.040987"], ["updated_at", "2019-01-04 08:12:57.040987"]]
+  [1m[35m (75.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 142ms (Views: 0.3ms | ActiveRecord: 77.2ms)
+
+
+Started POST "/admin/subgenre/new" for 127.0.0.1 at 2019-01-04 13:43:11 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sNaSyjubABJYh3GtfkX8Fbwa+lh4kvApgQxFlUhb+xcXp1bbEdjsMN7tKETdE0wJr0HvXdcohGFwXW4bYGKxaQ==", "subgenre"=>{"name"=>"computer", "genre_id"=>"1", "question_ids"=>["", ""], "user_quiz_ids"=>["", ""], "user_ids"=>["", ""]}, "return_to"=>"http://localhost:3000/admin/subgenre", "_add_another"=>"", "model_name"=>"subgenre"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE 1=0[0m
+  [1m[36mUserQuiz Load (0.4ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE 1=0[0m
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE 1=0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGenre Load (1.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "subgenres" ("name", "genre_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "computer"], ["genre_id", 1], ["created_at", "2019-01-04 08:13:11.163302"], ["updated_at", "2019-01-04 08:13:11.163302"]]
+  [1m[35m (26.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/subgenre/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fsubgenre
+Completed 302 Found in 167ms (ActiveRecord: 43.0ms)
+
+
+Started GET "/admin/subgenre/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fsubgenre" for 127.0.0.1 at 2019-01-04 13:43:11 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:3000/admin/subgenre", "model_name"=>"subgenre"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (10.2ms)
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres" ORDER BY genres.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (12.9ms)
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY questions.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (15.0ms)
+  [1m[36mUserQuiz Load (1.1ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" ORDER BY user_quizzes.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (12.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (10.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (37.0ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (137.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (35.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (85.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (32.1ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (19.1ms)
+Completed 200 OK in 851ms (Views: 835.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/admin/genre?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:43:17 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"genre"}
+  [1m[36mUser Load (13.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mGenre Load (3.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY genres.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mSubgenre Load (0.9ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (179.4ms)
+Completed 200 OK in 300ms (Views: 212.8ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/admin/subgenre/1?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:43:22 +0530
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"subgenre", "id"=>"1"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (1.9ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 ORDER BY "subgenres"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1[0m  [["subgenre_id", 1]]
+  [1m[36mUserQuiz Load (0.3ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."subgenre_id" = $1[0m  [["subgenre_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_quizzes" ON "users"."id" = "user_quizzes"."user_id" WHERE "user_quizzes"."subgenre_id" = $1[0m  [["subgenre_id", 1]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (225.0ms)
+Completed 200 OK in 404ms (Views: 339.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/admin/question?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:43:26 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"question"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY questions.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (79.4ms)
+Completed 200 OK in 137ms (Views: 100.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/question/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:43:29 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"question"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "subgenres"[0m
+  [1m[36mSubgenre Load (0.8ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (73.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (7.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (18.0ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (20.0ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (182.5ms)
+Completed 200 OK in 250ms (Views: 208.2ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/admin/question/new" for 127.0.0.1 at 2019-01-04 13:44:18 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zhSdwg5OD9cUkU1wMSfz0axdcewq/rj51yWMiZp1SEJa+GMqfJxR1DcOGCERwJHI8fKJrAMF6LtUUfXH5JrIFw==", "question"=>{"subgenre_id"=>"1", "question"=>"current ubuntu version", "option1"=>"14.04", "option2"=>"16.04", "option3"=>"18.06", "option4"=>"2", "check1"=>"0", "check2"=>"0", "check3"=>"1", "check4"=>"0"}, "return_to"=>"http://localhost:3000/admin/question", "_add_another"=>"", "model_name"=>"question"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubgenre Load (1.0ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "questions" ("subgenre_id", "question", "option1", "option2", "option3", "option4", "check1", "check2", "check3", "check4", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["subgenre_id", 1], ["question", "current ubuntu version"], ["option1", "14.04"], ["option2", "16.04"], ["option3", "18.06"], ["option4", "2"], ["check1", "f"], ["check2", "f"], ["check3", "t"], ["check4", "f"], ["created_at", "2019-01-04 08:14:18.617874"], ["updated_at", "2019-01-04 08:14:18.617874"]]
+  [1m[35m (73.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/question/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fquestion
+Completed 302 Found in 139ms (ActiveRecord: 77.8ms)
+
+
+Started GET "/admin/question/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fquestion" for 127.0.0.1 at 2019-01-04 13:44:18 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:3000/admin/question", "model_name"=>"question"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  [1m[36mSubgenre Load (3.8ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (2.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (36.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (13.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (9.0ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (1.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.6ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (11.0ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (138.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (15.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (33.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (21.6ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (33.2ms)
+Completed 200 OK in 618ms (Views: 569.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:44:24 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (112.4ms)
+Completed 200 OK in 180ms (Views: 150.7ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/admin/user_quiz?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:44:28 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user_quiz"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUserQuiz Load (0.5ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" ORDER BY user_quizzes.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (63.3ms)
+Completed 200 OK in 119ms (Views: 81.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:44:29 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (117.2ms)
+Completed 200 OK in 289ms (Views: 175.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:44:37 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 31ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:44:37 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (8.9ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (6.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 224ms (Views: 153.8ms | ActiveRecord: 23.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-04 13:44:40 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cC6VFRIOy6LiZfKrTTtjZGnRBJvYYZyQvYLO2yQLqIL+oLjMFPuyjn7QtuxRCKZ0nkeNYQTXA7hbWyYtv2PQzA=="}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 200ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:44:41 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 224ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-01-04 13:44:46 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"ihpCeb0f5BYwLOoYvFllgx1gVo7qCU8B06Ab49kkQzWvYGBowJDrXPcZkHsbCbnrCMRcuK7vG6D6g3XgDR9s2w=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (47.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (85.4ms)
+Completed 200 OK in 297ms (Views: 295.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-01-04 13:45:07 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NRuofaq4q3sLyvPpUndpXRM69D5ggZA3OFK5uWldqscQYYps1zekMcz/iYr1J7U1Bp7+CCRnxJYRcde6vWaFKQ==", "user"=>{"email"=>"shikha@bittern.co", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shikha@bittern.co"], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "shikha@bittern.co"], ["encrypted_password", "$2a$11$1dXjJNb6P/iPDRgc99GBTOa448LylAKM64pOYGrMf4rTpg2qU3TzS"], ["created_at", "2019-01-04 08:15:07.976838"], ["updated_at", "2019-01-04 08:15:07.976838"]]
+  [1m[35m (38.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-01-04 08:15:08.021271"], ["last_sign_in_at", "2019-01-04 08:15:08.021271"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2019-01-04 08:15:08.022291"], ["id", 2]]
+  [1m[35m (59.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 349ms (ActiveRecord: 100.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:45:08 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 8ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:45:08 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.4ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 118ms (Views: 107.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:45:13 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (2.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered quizplay/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 78ms (Views: 68.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/quizplay/1" for 127.0.0.1 at 2019-01-04 13:45:15 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"7h/dS9Zq+JoHg/exIac694BH6WfzW+x/9G425dzcPuLLZf9aq+X30MC2jdKG9+aflePjUbe9uN7dTVjmCOcRDA==", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Subgenre Load (0.0ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Question Load (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "presentquizid" = $1, "presentquizqueid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["presentquizid", 1], ["presentquizqueid", 1], ["updated_at", "2019-01-04 08:15:15.363524"], ["id", 2]]
+  [1m[35m (16.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/quizplay/1/1
+Completed 302 Found in 40ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/quizplay/1/1" for 127.0.0.1 at 2019-01-04 13:45:15 +0530
+Processing by QuizplayController#ques as HTML
+  Parameters: {"id"=>"1", "ques"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["subgenre_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" DESC LIMIT $2[0m  [["subgenre_id", 1], ["LIMIT", 1]]
+  Rendering quizplay/ques.html.erb within layouts/application
+  Rendered quizplay/ques.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 62ms (Views: 50.8ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/quizplay/1/1" for 127.0.0.1 at 2019-01-04 13:45:21 +0530
+Processing by QuizplayController#next as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ic2aHfdLfSFKr50cky9neI0c2eK3V9Z5SyiPCOQx3rUEt7gMisRya42a5380f7sQmLjT1POxgthiC+ELMArxWw==", "arr"=>{"1"=>"0", "2"=>"1", "3"=>"0", "4"=>"0"}, "id"=>"1", "ques"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (1.5ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (1.8ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Subgenre Load (0.0ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (3.8ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 AND (id > '1') ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "user_quizzes" ("user_id", "subgenre_id", "score", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["subgenre_id", 1], ["score", 0], ["created_at", "2019-01-04 08:15:21.197387"], ["updated_at", "2019-01-04 08:15:21.197387"]]
+  [1m[35m (23.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "presentquizqueid" = $1, "presentquizid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["presentquizqueid", 0], ["presentquizid", 0], ["updated_at", "2019-01-04 08:15:21.224920"], ["id", 2]]
+  [1m[35m (19.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 109ms (ActiveRecord: 60.8ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:45:21 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.5ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dashboard/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 107ms (Views: 97.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:46:32 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (6.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered quizplay/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 94ms (Views: 71.2ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/quizplay/1" for 127.0.0.1 at 2019-01-04 13:46:33 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"72nt6yTJRGC3BsgE7ajrDvUXqkyPC+i42yLyGJeZoMXKE8/6WUZLKnAzsmdK+Ddm4LOgesvtvBnyAZwbQ6KPKw==", "id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 16ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:46:34 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered quizplay/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 103ms (Views: 90.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:48:44 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 15ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:48:44 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.4ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dashboard/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 97ms (Views: 69.5ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-04 13:48:52 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qsgUoCUtFXCY7xcVrONBW/PCE6qyek/ftLuupXhcH8SPsjaxWKIaOl/abXYLs50z5mYZnPacG36dmMCmrGcwKg=="}
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (7.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 52ms (ActiveRecord: 26.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:48:52 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 315ms (Views: 304.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:48:56 +0530
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"GO7s1CKwSszJNGd+zK5Fz/9tPb5mO979AgVM3QHi5Lltpg9SWZwDtNiWxo57iOjr1dNpm8GnfA9pqtOjlgOaiw=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 154ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:49:06 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Q7OQcxL30Piq8hVTrWGO4DbwKNo3gcE4tUseY+VquOERi3Ht2eWO/MJaaX5kysfqmWUhs9CpfaJerMHGHTU0Q==", "user"=>{"email"=>"shikha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "shikha@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 154ms (ActiveRecord: 3.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Q7OQcxL30Piq8hVTrWGO4DbwKNo3gcE4tUseY+VquOERi3Ht2eWO/MJaaX5kysfqmWUhs9CpfaJerMHGHTU0Q==", "user"=>{"email"=>"shikha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 188ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:49:11 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FDJDo6MPKFyFKCqCvm1/Xf9lut+CcRBp21TUJKdRnPhheqAl2CNhJJSKi3IJS9J51dvu+iXtspuw+0taMLDiyg==", "user"=>{"email"=>"shikha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "shikha@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2019-01-04 08:19:11.348137"], ["sign_in_count", 2], ["updated_at", "2019-01-04 08:19:11.349141"], ["id", 1]]
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 218ms (ActiveRecord: 21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:49:11 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 12ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:49:11 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (5.5ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 94ms (Views: 61.9ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-04 13:49:14 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"authenticity_token"=>"8PzOPQUqpBQnJKddtxnpXwWZz6DRywQJl2zWKsvQSASwCd8UNUwuG6+9tMp8+nA2B5EXjZ7d25ycJuoBwrmzxA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "subgenres"[0m
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" ORDER BY "subgenres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_quizzes"[0m
+  [1m[36mUserQuiz Load (0.3ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" ORDER BY "user_quizzes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (31.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (11.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.1ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (6.7ms)
+Completed 200 OK in 257ms (Views: 214.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/admin/question?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:49:21 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"question"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY questions.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (57.1ms)
+Completed 200 OK in 111ms (Views: 69.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/admin/genre?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:49:24 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"genre"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY genres.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (47.7ms)
+Completed 200 OK in 85ms (Views: 58.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/admin/subgenre?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:49:28 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"subgenre"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1[0m  [["subgenre_id", 1]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (56.7ms)
+Completed 200 OK in 86ms (Views: 67.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/user_quiz?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:49:31 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user_quiz"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUserQuiz Load (23.9ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" ORDER BY user_quizzes.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2[0m
+  [1m[36mSubgenre Load (3.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (125.9ms)
+Completed 200 OK in 162ms (Views: 107.2ms | ActiveRecord: 35.3ms)
+
+
+Started GET "/admin/user_quiz/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:49:35 +0530
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user_quiz", "id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.6ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."id" = $1 ORDER BY "user_quizzes"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (38.4ms)
+  [1m[36mSubgenre Load (0.7ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "subgenres"[0m
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (24.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (15.6ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (16.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (112.7ms)
+Completed 200 OK in 216ms (Views: 169.6ms | ActiveRecord: 12.8ms)
+
+
+Started PUT "/admin/user_quiz/1/edit" for 127.0.0.1 at 2019-01-04 13:49:40 +0530
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p71YUh5VQFaS8wwsj0e44j6VA3jvwPCDf8OwpZH7JYTCv7zUUVtP0fU9aUtCIOEEDOfk86r+RI7uZAtsD0maRQ==", "user_quiz"=>{"user_id"=>"2", "subgenre_id"=>"1", "score"=>"30"}, "return_to"=>"http://localhost:3000/admin/user_quiz", "_add_another"=>"", "model_name"=>"user_quiz", "id"=>"1"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.7ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."id" = $1 ORDER BY "user_quizzes"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (4.2ms)[0m  [1m[33mUPDATE "user_quizzes" SET "score" = $1, "updated_at" = $2 WHERE "user_quizzes"."id" = $3[0m  [["score", 30], ["updated_at", "2019-01-04 08:19:40.785691"], ["id", 1]]
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/user_quiz/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fuser_quiz
+Completed 302 Found in 81ms (ActiveRecord: 26.5ms)
+
+
+Started GET "/admin/user_quiz/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fuser_quiz" for 127.0.0.1 at 2019-01-04 13:49:40 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:3000/admin/user_quiz", "model_name"=>"user_quiz"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (16.8ms)
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (8.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (27.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (66.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (11.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.5ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (13.6ms)
+Completed 200 OK in 262ms (Views: 236.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:49:49 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:49:49 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.4ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 61ms (Views: 53.4ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-04 13:49:50 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qR6oP/RclLDgXZwqumOrwVscEb8QLjFTfjIi3TDUxAPp67kWxDoev2jEj71xgDKoWRTJkl847sZ1eB72Ob0/ww=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:49:50 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:49:52 +0530
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"Jo6skCdmzspF5HF+w6v+HcQRCh6ms+4rrVal0s+3juyqy/88kdseNmCPG8ZU0agYQvRRdnXoztCr78p9UYiEOw=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 146ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:50:03 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3r1VhcZ0H0E3jWE4G69T/7vOB8kPrLjOdZFxpMkI9JJS+AYpcMnPvRLmC4CM1QX6PStcodz3mDVzKB4LVzf+RQ==", "user"=>{"email"=>"shikha@bittern.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "shikha@bittern.co"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 193ms (ActiveRecord: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3r1VhcZ0H0E3jWE4G69T/7vOB8kPrLjOdZFxpMkI9JJS+AYpcMnPvRLmC4CM1QX6PStcodz3mDVzKB4LVzf+RQ==", "user"=>{"email"=>"shikha@bittern.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 234ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:50:08 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WnDLtde/9eUtCCQb68KjftdscT32l0s7YAWSdLn02LbWNZgZYQIlGQhjTqN8uPV7UYkqVSXMa8BmvP3bJ8vSYQ==", "user"=>{"email"=>"shikha@bittern.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "shikha@bittern.co"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2019-01-04 08:20:08.953817"], ["sign_in_count", 2], ["updated_at", "2019-01-04 08:20:08.954871"], ["id", 2]]
+  [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 192ms (ActiveRecord: 24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:50:08 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:50:08 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.4ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "score" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["score", 30], ["updated_at", "2019-01-04 08:20:09.003800"], ["id", 2]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dashboard/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 60ms (Views: 44.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:50:17 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered quizplay/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/quizplay/1" for 127.0.0.1 at 2019-01-04 13:50:19 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"iaiZlBlqXZglULiu1TDkhdcZe3YA2QEYII0zEyGK6rQOwE/Pu++tPKQeygt2c7tUyXVhdchW6LAc5j7iI85ldg==", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:50:19 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered quizplay/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 51ms (Views: 45.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:50:24 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:50:24 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.5ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dashboard/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 75ms (Views: 59.5ms | ActiveRecord: 3.9ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-04 13:50:38 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UEhQEZD/xmH2TTO+Y2dsxhJF/5QvUK0sqFWITuatVlbXIIZKMno2xXcDQRvAJDMXDCnll+ffRISUPoW/5OnZlA=="}
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (10.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 47ms (ActiveRecord: 21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:50:38 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 143ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:50:42 +0530
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"eziXimT1AQu2vltmO9jvwfkP4r9Z967IRwz2Ot+9W22zeop7VjKKlQbNqejMvuRyn7v+zIc1bhwjSfW32za/eg=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (54.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (92.1ms)
+Completed 200 OK in 502ms (Views: 494.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:50:53 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cBfUjRQasJYp111y1ZekwScNTvouKYRWx2vgrl5xmeu4Vcl8Jt07CJmkr/wi8a9yQblSifDrRIKjLuMjWvp9/A==", "user"=>{"email"=>"shikha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "shikha@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2019-01-04 08:20:53.343008"], ["last_sign_in_at", "2019-01-04 08:19:11.348137"], ["sign_in_count", 3], ["updated_at", "2019-01-04 08:20:53.344233"], ["id", 1]]
+  [1m[35m (26.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 254ms (ActiveRecord: 37.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:50:53 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:50:53 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.4ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 90ms (Views: 73.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-04 13:51:00 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"authenticity_token"=>"rwkNJbbaQ7IU77WD5Td99lMRcHuLHsqsX1ftbW0uzzxNtjx8LhPbxG2yrRwnxLgTi7KaXPJ2zImjbhrZWHWx1A=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "subgenres"[0m
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" ORDER BY "subgenres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_quizzes"[0m
+  [1m[36mUserQuiz Load (0.5ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" ORDER BY "user_quizzes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (75.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (21.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (70.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (37.1ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (14.8ms)
+Completed 200 OK in 1128ms (Views: 1046.4ms | ActiveRecord: 33.4ms)
+
+
+Started GET "/admin/question?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:51:07 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"question"}
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mQuestion Load (1.7ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY questions.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mSubgenre Load (1.7ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (246.6ms)
+Completed 200 OK in 369ms (Views: 298.7ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/admin/question/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:51:12 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"question"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  [1m[36mSubgenre Load (0.7ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (16.6ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (3.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (10.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (79.0ms)
+Completed 200 OK in 182ms (Views: 102.3ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/admin/question/new" for 127.0.0.1 at 2019-01-04 13:51:33 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HxhNzmLy1YD36tsn5d6huKM6FGFkXcVUzyYBQQd/2GbtE8rdvB0j4DspoWFij9jxPDfuUOyUiEG+I6ArGMq4NQ==", "question"=>{"subgenre_id"=>"1", "question"=>"who is the PM of india.", "option1"=>"N", "option2"=>"r", "option3"=>"S Maxwell", "option4"=>"a", "check1"=>"1", "check2"=>"0", "check3"=>"0", "check4"=>"0"}, "return_to"=>"http://localhost:3000/admin/question", "_add_another"=>"", "model_name"=>"question"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("subgenre_id", "question", "option1", "option2", "option3", "option4", "check1", "check2", "check3", "check4", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["subgenre_id", 1], ["question", "who is the PM of india."], ["option1", "N"], ["option2", "r"], ["option3", "S Maxwell"], ["option4", "a"], ["check1", "t"], ["check2", "f"], ["check3", "f"], ["check4", "f"], ["created_at", "2019-01-04 08:21:33.574210"], ["updated_at", "2019-01-04 08:21:33.574210"]]
+  [1m[35m (86.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/question/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fquestion
+Completed 302 Found in 127ms (ActiveRecord: 90.7ms)
+
+
+Started GET "/admin/question/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fquestion" for 127.0.0.1 at 2019-01-04 13:51:33 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:3000/admin/question", "model_name"=>"question"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (24.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (10.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (0.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (11.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (92.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.6ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (12.0ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.2ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (16.2ms)
+Completed 200 OK in 493ms (Views: 473.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:51:43 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:51:47 +0530
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"mKwaUuQ+UpX+KKpqXzu6R1W5W2X1PMCnBXkReHPl4634wXB3nLyobwHLtnhFmRG5/STg/+TdCrMm9Tb7lQ3yAg=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 1387ms (Views: 1385.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-04 13:51:58 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mKfUXgsUWLw/fC9rcRZYDCOqdnvV2tc4l5Q9c45CI4L4yr57c5aiRsCfM3lrtPPyizfN4cQ7HSy0GBrwaKoyLQ==", "user"=>{"email"=>"shikha@bittern.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "shikha@bittern.co"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2019-01-04 08:21:58.592405"], ["last_sign_in_at", "2019-01-04 08:20:08.953817"], ["sign_in_count", 3], ["updated_at", "2019-01-04 08:21:58.593929"], ["id", 2]]
+  [1m[35m (21.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 291ms (ActiveRecord: 22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:51:58 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:51:58 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.5ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dashboard/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 151ms (Views: 116.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:52:02 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (8.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (16.1ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered quizplay/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 298ms (Views: 200.9ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/quizplay/1" for 127.0.0.1 at 2019-01-04 13:52:05 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"u2mrAblxjHaPuhXcXVitcoXDxlDV7lAdZQwud6dKg+hqoUUwPy3LKbol0DKP8E/xCXPv0e9Hrf7p52k43YiYSw==", "id"=>"1"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 14ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:52:05 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered quizplay/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 125ms (Views: 117.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/quizplay/1" for 127.0.0.1 at 2019-01-04 13:52:07 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"QvH1Jvl0+WZjwp6y94AH8yt3/jwBaCotwlSvSmWs/5mTORsXfyi+OVZdW1wlKOVwp8fXvTvB185Ov+gFH27kOg==", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (12.2ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 23ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:52:07 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (4.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (6.3ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered quizplay/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 343ms (Views: 319.0ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/admin/genre?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:52:26 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"genre"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY genres.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (50.8ms)
+Completed 200 OK in 86ms (Views: 66.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/genre/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:52:28 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"genre"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.6ms)
+  [1m[36mSubgenre Load (0.7ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (21.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (19.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (65.8ms)
+Completed 200 OK in 129ms (Views: 82.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/admin/genre/new" for 127.0.0.1 at 2019-01-04 13:52:39 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5lwJ5f7qAnx0W8JDw7uX6YUr0imrG6PEOBaDZL5PrxtjWLjm+xK2wwgUoF7hI1/S1yEWTY3xYMl3e558lhwrVg==", "genre"=>{"name"=>"gk", "subgenre_ids"=>["", ""]}, "return_to"=>"http://localhost:3000/admin/genre", "_add_another"=>"", "model_name"=>"genre"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE 1=0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "gk"], ["created_at", "2019-01-04 08:22:39.529804"], ["updated_at", "2019-01-04 08:22:39.529804"]]
+  [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/genre/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fgenre
+Completed 302 Found in 103ms (ActiveRecord: 52.0ms)
+
+
+Started GET "/admin/genre/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fgenre" for 127.0.0.1 at 2019-01-04 13:52:39 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:3000/admin/genre", "model_name"=>"genre"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.6ms)
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (11.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (9.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (32.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (11.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.5ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (14.3ms)
+Completed 200 OK in 223ms (Views: 209.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/subgenre?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:52:42 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"subgenre"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 1[0m
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1[0m  [["subgenre_id", 1]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (58.7ms)
+Completed 200 OK in 102ms (Views: 73.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/subgenre/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:52:47 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"subgenre"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (4.9ms)
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" ORDER BY genres.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (11.7ms)
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY questions.id desc[0m
+  [1m[36mSubgenre Load (1.7ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (30.4ms)
+  [1m[36mUserQuiz Load (0.9ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" ORDER BY user_quizzes.id desc[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2[0m
+  [1m[36mCACHE Subgenre Load (0.0ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 1[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (9.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (5.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (11.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (95.7ms)
+Completed 200 OK in 152ms (Views: 106.9ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/admin/subgenre/new" for 127.0.0.1 at 2019-01-04 13:53:17 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9UOsc7rIcqhLFUNWdGRNCyRT7tMd9lmrAEcyOzkKK5OQBNrliTHWDU4bvceYd6tXXT/mnUi3x7P/a63pFBK9g==", "subgenre"=>{"name"=>"gk", "genre_id"=>"2", "question_ids"=>["", "", "2", "1"], "user_quiz_ids"=>["", "", "1"], "user_ids"=>["", "", "2", "1"]}, "return_to"=>"http://localhost:3000/admin/subgenre", "_add_another"=>"", "model_name"=>"subgenre"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (38.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" IN (2, 1)[0m
+  [1m[36mUserQuiz Load (0.5ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."id" = 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (2, 1)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "subgenres" ("name", "genre_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "gk"], ["genre_id", 2], ["created_at", "2019-01-04 08:23:17.606535"], ["updated_at", "2019-01-04 08:23:17.606535"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "questions" SET "subgenre_id" = $1, "updated_at" = $2 WHERE "questions"."id" = $3[0m  [["subgenre_id", 2], ["updated_at", "2019-01-04 08:23:17.609033"], ["id", 2]]
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "questions" SET "subgenre_id" = $1, "updated_at" = $2 WHERE "questions"."id" = $3[0m  [["subgenre_id", 2], ["updated_at", "2019-01-04 08:23:17.613470"], ["id", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "user_quizzes" SET "subgenre_id" = $1, "updated_at" = $2 WHERE "user_quizzes"."id" = $3[0m  [["subgenre_id", 2], ["updated_at", "2019-01-04 08:23:17.621053"], ["id", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "user_quizzes" ("user_id", "subgenre_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["subgenre_id", 2], ["created_at", "2019-01-04 08:23:17.623453"], ["updated_at", "2019-01-04 08:23:17.623453"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "user_quizzes" ("user_id", "subgenre_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["subgenre_id", 2], ["created_at", "2019-01-04 08:23:17.625594"], ["updated_at", "2019-01-04 08:23:17.625594"]]
+  [1m[35m (20.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/subgenre/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fsubgenre
+Completed 302 Found in 149ms (ActiveRecord: 67.2ms)
+
+
+Started GET "/admin/subgenre/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fsubgenre" for 127.0.0.1 at 2019-01-04 13:53:17 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:3000/admin/subgenre", "model_name"=>"subgenre"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (6.8ms)
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres" ORDER BY genres.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (15.4ms)
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY questions.id desc[0m
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 2[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (33.1ms)
+  [1m[36mUserQuiz Load (0.6ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" ORDER BY user_quizzes.id desc[0m
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (1, 2)[0m
+  [1m[36mCACHE Subgenre Load (0.0ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 2[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (69.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (18.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (18.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (209.1ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.8ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (11.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (11.8ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (20.0ms)
+Completed 200 OK in 454ms (Views: 426.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/admin/question?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:53:23 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"question"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY questions.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 2[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (58.4ms)
+Completed 200 OK in 99ms (Views: 73.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/user_quiz?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:53:29 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user_quiz"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUserQuiz Load (0.5ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" ORDER BY user_quizzes.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (1, 2)[0m
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 2[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (92.8ms)
+Completed 200 OK in 134ms (Views: 105.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/user_quiz/2/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:53:34 +0530
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user_quiz", "id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.6ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."id" = $1 ORDER BY "user_quizzes"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (16.9ms)
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (2.2ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" IN (2, 1)[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (24.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (20.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (81.7ms)
+Completed 200 OK in 114ms (Views: 93.2ms | ActiveRecord: 5.6ms)
+
+
+Started PUT "/admin/user_quiz/2/edit" for 127.0.0.1 at 2019-01-04 13:53:38 +0530
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"droBLQT6nyV5Gl0Zh2fXNpEcRpxFKouR8B7MFMc4VpTOSj0ymavfJwIxWfhi1kGAj9/PWHM3HQpyNiMachDDMw==", "user_quiz"=>{"user_id"=>"2", "subgenre_id"=>"2", "score"=>"10"}, "return_to"=>"http://localhost:3000/admin/user_quiz", "_add_another"=>"", "model_name"=>"user_quiz", "id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (18.7ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."id" = $1 ORDER BY "user_quizzes"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (10.8ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (13.7ms)[0m  [1m[33mUPDATE "user_quizzes" SET "score" = $1, "updated_at" = $2 WHERE "user_quizzes"."id" = $3[0m  [["score", 10], ["updated_at", "2019-01-04 08:23:38.964781"], ["id", 2]]
+  [1m[35m (68.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/user_quiz/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fuser_quiz
+Completed 302 Found in 295ms (ActiveRecord: 121.9ms)
+
+
+Started GET "/admin/user_quiz/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fuser_quiz" for 127.0.0.1 at 2019-01-04 13:53:39 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:3000/admin/user_quiz", "model_name"=>"user_quiz"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (47.0ms)
+  [1m[36mSubgenre Load (1.1ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (4.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" IN (2, 1)[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (32.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (5.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (58.6ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (216.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (18.6ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (38.0ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (31.5ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (50.2ms)
+Completed 200 OK in 965ms (Views: 901.2ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/admin/user_quiz?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:53:43 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user_quiz"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUserQuiz Load (0.6ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" ORDER BY user_quizzes.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (1, 2)[0m
+  [1m[36mSubgenre Load (0.5ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = 2[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (109.4ms)
+Completed 200 OK in 213ms (Views: 163.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/user_quiz/3/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:53:45 +0530
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user_quiz", "id"=>"3"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.6ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."id" = $1 ORDER BY "user_quizzes"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (24.4ms)
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" IN (2, 1)[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (12.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (5.3ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (17.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (79.4ms)
+Completed 200 OK in 143ms (Views: 103.2ms | ActiveRecord: 5.6ms)
+
+
+Started PUT "/admin/user_quiz/3/edit" for 127.0.0.1 at 2019-01-04 13:53:48 +0530
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OxT1dZLwhzQa4oAe1iuYoGqzmQPOZwnp3Ax+30S7b/hHXu0kBAW46GBaAW0OnXzGaZPgArUSK1J2dyQVeWWn5Q==", "user_quiz"=>{"user_id"=>"1", "subgenre_id"=>"2", "score"=>"10"}, "return_to"=>"http://localhost:3000/admin/user_quiz", "_add_another"=>"", "model_name"=>"user_quiz", "id"=>"3"}
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (9.6ms)[0m  [1m[34mSELECT  "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."id" = $1 ORDER BY "user_quizzes"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (2.1ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (14.1ms)[0m  [1m[33mUPDATE "user_quizzes" SET "score" = $1, "updated_at" = $2 WHERE "user_quizzes"."id" = $3[0m  [["score", 10], ["updated_at", "2019-01-04 08:23:49.096466"], ["id", 3]]
+  [1m[35m (13.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/user_quiz/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fuser_quiz
+Completed 302 Found in 189ms (ActiveRecord: 58.1ms)
+
+
+Started GET "/admin/user_quiz/new?return_to=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fuser_quiz" for 127.0.0.1 at 2019-01-04 13:53:49 +0530
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:3000/admin/user_quiz", "model_name"=>"user_quiz"}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY users.id desc[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (40.9ms)
+  [1m[36mSubgenre Load (0.6ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" ORDER BY subgenres.id desc[0m
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" IN (2, 1)[0m
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (25.4ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (5.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (14.7ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (125.2ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.9ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (12.5ms)
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.7ms)
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (28.6ms)
+Completed 200 OK in 539ms (Views: 483.8ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:53:55 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (1.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  [1m[36mSubgenre Load (1.7ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 2]]
+  Rendered quizplay/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 191ms (Views: 183.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/quizplay/2" for 127.0.0.1 at 2019-01-04 13:53:59 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"WC4vHT+v3RAVGz3IPfI30S0Qhf5ApKZGstj9lixjVGqJ5sEsufOaTyCE+CbvWtVSoaCsf3oNW6U+M7rZVqFPyQ==", "id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 17ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:53:59 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (4.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (5.3ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 2]]
+  Rendered quizplay/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 179ms (Views: 158.7ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/quizplay/2" for 127.0.0.1 at 2019-01-04 13:54:03 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"cdjTG+R5OfFGSMs8J3fcCjtAaQwVXEZXOCQWQpJsi2GgED0qYiV+rnPXDtL13z6Jt/BAjS/1u7S0z1EN6K6Qwg==", "id"=>"2"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 25ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:54:03 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (1.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (4.7ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 2]]
+  Rendered quizplay/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 128ms (Views: 112.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/quizplay/1" for 127.0.0.1 at 2019-01-04 13:54:05 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"oUwwu6p8sMdgDYl7hM7CRsSJAGyGRDxVBATzPlb6yl9whN6KLCD3mFWSTJVWZiDFSDkp7bztwbaI77RxLDjR/A==", "id"=>"1"}
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mSubgenre Load (11.5ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 44ms (ActiveRecord: 24.9ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:54:05 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 2]]
+  Rendered quizplay/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 91ms (Views: 72.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/quizplay/1" for 127.0.0.1 at 2019-01-04 13:54:09 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"0L4aUSNIpcHfBzihGyjN7rBSVaRd75aLbZ3VtGxZBrcBdvRgpRTinuqY/U/JgC9tPOJ8JWdGa2jhdpL7FpsdFA==", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mSubgenre Load (0.2ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 10ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:54:09 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.2ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 2]]
+  Rendered quizplay/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 56ms (Views: 50.1ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-04 13:54:14 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"K72L2yyxCJshXMxW8ZVG0Lu7mvQKe0+XW7/yE6DEk/T6dWXqqu1PxBTDCbgjPaRTNwuzdTDSsnTXVLVc2gaIVw=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:54:14 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 360ms (Views: 326.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-01-04 13:54:17 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"W1a5ja7JxkyD++rofvzxetpG2eTd5HF3XcIhH+JAombUhSeBXgJ2Sm/RYDKBxTw/Ve5RuoKjaUixTMe+z3lAEg=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 126ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-01-04 13:54:34 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JZFEYEvpTVAdhIDw/iE16yaZDYSYEtIP8rp1aRSrO5WqQtpsuyL9VvGuCioBGPiuqTGF2sdVyjAeNJPIOZLZ4Q==", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abc@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "abc@gmail.com"], ["encrypted_password", "$2a$11$UA4Mj6pZx1nylYPFvl34meZukxT5AYhdOJvHuvxbQhkdKG5kA9rPi"], ["created_at", "2019-01-04 08:24:34.690566"], ["updated_at", "2019-01-04 08:24:34.690566"]]
+  [1m[35m (23.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-01-04 08:24:34.717403"], ["last_sign_in_at", "2019-01-04 08:24:34.717403"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2019-01-04 08:24:34.718550"], ["id", 3]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 195ms (ActiveRecord: 28.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 13:54:34 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:54:34 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.5ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 51.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:54:40 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 2]]
+  Rendered quizplay/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 66ms (Views: 54.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/quizplay/1" for 127.0.0.1 at 2019-01-04 13:54:43 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"Y+HnQ14pk04TDrYSr2+Tl3CaXTqZP6TAW5kuwOYKc1LsMnlPruIjSP8kPMhQVl7S/zLVZMZ4vP+3F8hhyzORJg==", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 3]]
+  [1m[36mSubgenre Load (1.8ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/quizplay
+Completed 302 Found in 23ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/quizplay" for 127.0.0.1 at 2019-01-04 13:54:43 +0530
+Processing by QuizplayController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quizplay/index.html.erb within layouts/application
+  [1m[36mGenre Load (14.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mSubgenre Load (2.4ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 1]]
+  [1m[36mSubgenre Load (14.2ms)[0m  [1m[34mSELECT "subgenres".* FROM "subgenres" WHERE "subgenres"."genre_id" = $1[0m  [["genre_id", 2]]
+  Rendered quizplay/index.html.erb within layouts/application (80.3ms)
+Completed 200 OK in 228ms (Views: 178.5ms | ActiveRecord: 33.4ms)
+
+
+Started GET "/quizplay/2" for 127.0.0.1 at 2019-01-04 13:54:46 +0530
+Processing by QuizplayController#show as HTML
+  Parameters: {"authenticity_token"=>"u1GpelmjaA3Vwf/DMySdDwwMpQPR3GoQ2y5Qxuvwgh00gjd2qWjYCznrdRnMHVBKg6QtXY6bci83oLZnxslgaQ==", "id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 3]]
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Subgenre Load (0.0ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Question Load (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "presentquizid" = $1, "presentquizqueid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["presentquizid", 2], ["presentquizqueid", 1], ["updated_at", "2019-01-04 08:24:46.630259"], ["id", 3]]
+  [1m[35m (22.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/quizplay/2/1
+Completed 302 Found in 46ms (ActiveRecord: 26.3ms)
+
+
+Started GET "/quizplay/2/1" for 127.0.0.1 at 2019-01-04 13:54:46 +0530
+Processing by QuizplayController#ques as HTML
+  Parameters: {"id"=>"2", "ques"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (1.7ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["subgenre_id", 2], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (6.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" DESC LIMIT $2[0m  [["subgenre_id", 2], ["LIMIT", 1]]
+  Rendering quizplay/ques.html.erb within layouts/application
+  Rendered quizplay/ques.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 158ms (Views: 86.8ms | ActiveRecord: 11.2ms)
+
+
+Started POST "/quizplay/2/1" for 127.0.0.1 at 2019-01-04 13:54:52 +0530
+Processing by QuizplayController#next as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3o6YPqh34Is3xqn8zUQpnHu4pRo8QUOqaW9uObFdp7JRXQYyWLxQjdvsIyYyfeTZ9BAtRGMGW5WF4YiYnGRFxg==", "arr"=>{"1"=>"0", "2"=>"1", "3"=>"0", "4"=>"0"}, "id"=>"2", "ques"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (10.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Subgenre Load (0.0ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 AND (id > '1') ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/quizplay/2/2
+Completed 302 Found in 74ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/quizplay/2/2" for 127.0.0.1 at 2019-01-04 13:54:52 +0530
+Processing by QuizplayController#ques as HTML
+  Parameters: {"id"=>"2", "ques"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.9ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (1.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["subgenre_id", 2], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.6ms)[0m  [1m[33mUPDATE "users" SET "presentquizqueid" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["presentquizqueid", 2], ["updated_at", "2019-01-04 08:24:52.888093"], ["id", 3]]
+  [1m[35m (18.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 ORDER BY "questions"."id" DESC LIMIT $2[0m  [["subgenre_id", 2], ["LIMIT", 1]]
+  Rendering quizplay/ques.html.erb within layouts/application
+  Rendered quizplay/ques.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 163ms (Views: 114.3ms | ActiveRecord: 29.5ms)
+
+
+Started POST "/quizplay/2/2" for 127.0.0.1 at 2019-01-04 13:54:57 +0530
+Processing by QuizplayController#next as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Daa5tB4Z27pB0PojYnaFaXTo/N+XxtGWvvRFgVTEGYyCdSe47tJrvK36cPmdT0gs+0B0gciByalSeqMgef37+A==", "arr"=>{"1"=>"1", "2"=>"0", "3"=>"0", "4"=>"0"}, "id"=>"2", "ques"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.7ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (5.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (14.2ms)[0m  [1m[33mUPDATE "users" SET "cqscore" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["cqscore", 10], ["updated_at", "2019-01-04 08:24:57.294543"], ["id", 3]]
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."subgenre_id" = $1 AND (id > '2') ORDER BY "questions"."id" ASC LIMIT $2[0m  [["subgenre_id", 2], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "subgenres"."id" FROM "subgenres" INNER JOIN "user_quizzes" ON "subgenres"."id" = "user_quizzes"."subgenre_id" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSubgenre Load (0.3ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "user_quizzes" ("user_id", "subgenre_id", "score", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["subgenre_id", 2], ["score", 10], ["created_at", "2019-01-04 08:24:57.356292"], ["updated_at", "2019-01-04 08:24:57.356292"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "cqscore" = $1, "presentquizqueid" = $2, "presentquizid" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["cqscore", 0], ["presentquizqueid", 0], ["presentquizid", 0], ["updated_at", "2019-01-04 08:24:57.366301"], ["id", 3]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/index
+Completed 302 Found in 108ms (ActiveRecord: 57.6ms)
+
+
+Started GET "/dashboard/index" for 127.0.0.1 at 2019-01-04 13:54:57 +0530
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUserQuiz Load (0.4ms)[0m  [1m[34mSELECT "user_quizzes".* FROM "user_quizzes" WHERE "user_quizzes"."user_id" = $1[0m  [["user_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "score" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["score", 10], ["updated_at", "2019-01-04 08:24:57.398493"], ["id", 3]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mSubgenre Load (0.4ms)[0m  [1m[34mSELECT  "subgenres".* FROM "subgenres" WHERE "subgenres"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered dashboard/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 107ms (Views: 82.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-01-04 13:55:17 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/pc/.rvm/gems/ruby-2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (66.3ms)
+Completed 200 OK in 105ms (Views: 78.7ms | ActiveRecord: 1.4ms)
+
+
